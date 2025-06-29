@@ -380,7 +380,7 @@ reference the actual data using this key. Especially if the multiple
 entries refer to the same object.
 
 To demonstrate the slippery slope we are going down by assigning string columns
-to out database model, think about how we would change the data model if we
+to our database model, think about how we would change the data model if we
 wanted to keep track of the eye color of our artists?  Would we do this?
 
 ~~~~ {.sql}
@@ -406,7 +406,7 @@ we could call this "link" between two "tables" a "relationship" between
 two tables. And that is exactly what database experts decided to all these
 links.
 
-Lets make an `Artist` table as follows:
+Let's make an `Artist` table as follows:
 
 ~~~~ {.sql}
 DROP TABLE IF EXISTS Artist;
@@ -477,7 +477,7 @@ New York|25|Frank Sinatra|blue
 
 While it might seem a little clunky and your instincts might tell you that
 it would be faster just to keep the data in one table, it turns out the
-the limit on database performance is how much data needs to be scanned
+limit on database performance is how much data needs to be scanned
 when retrieving a query.  While the details are very complex, integers
 are a lot smaller than strings (especially Unicode) and far quicker to
 to move and compare.
