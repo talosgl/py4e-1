@@ -313,6 +313,39 @@ term and the first letters of the four SQL statements that implement
 "concept" and SQL is the implementation.  Another possible explanation
 is that "CRUD" is more fun to say than "ISUD".]
 
+SQLite Shell
+---------------------
+
+For the next few sections, you don't have to follow along with all of 
+the examples, but if you want to, you will need to have the SQLite 
+command-line shell installed. If you are on macOS or Linux, it should
+already be available. If you're on Windows, you can download it from 
+[sqlite.org](https://sqlite.org/download.html).
+
+Download the bundle that includes the command-line shell, and extract it
+into the same folder as your Python file and the `music.sqlite` database 
+we created earlier.
+
+Then, from the Windows command-line interface (CLI), you can run:
+
+~~~~
+sqlite3 music.sqlite
+~~~~
+
+to open the database in the SQLite shell. You can now type commands like:
+
+~~~~ {.sql}
+SELECT * FROM Track;
+~~~~
+
+to view the contents of the table directly.
+
+When you're ready to exit, type:
+
+~~~~
+.quit
+~~~~
+
 Multiple tables and basic data modeling
 ---------------------------------------
 
