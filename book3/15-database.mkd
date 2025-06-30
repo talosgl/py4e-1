@@ -765,7 +765,7 @@ cur = conn.cursor()
 handle = open('tracks.csv')
 
 for line in handle:
-    line = line.strip();
+    line = line.strip()
     pieces = line.split(',')
     if len(pieces) != 6 : continue
 
